@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity(), Updatable {
     private val INITIAL_VALUE = User()
 
     override fun update() {
-        text.append("* " + repository1.get() + "\n")
+        text.append("* " + repository1.get().name + "\n")
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
